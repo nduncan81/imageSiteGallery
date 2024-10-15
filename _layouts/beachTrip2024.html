@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="is-preload">
+
+    <div id="wrapper">
+
+      {%- include header.html -%}
+
+      <div id="main">
+        {% for image in site.static_files %}
+        {% if image.path contains 'assets/images/beachTrip2024' %}
+        <article class="thumb">
+          <a href="{{site.baseurl}}{{ image.path }}" class="image">
+            <img src="{{site.baseurl}}{{ image.path }}" />
+          </a>
+          <h2>{{image.name}}</h2>
+          <p></p>
+        </article>
+        {% endif %}
+        {% endfor %}
+
+        <!-- no idea where to put this... -->
+        <!-- {{ content }} -->
+      </div>
+
+      {%- include footer.html -%}
+
+    </div>
+
+    <script src="{{ 'assets/js/jquery.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/jquery.poptrox.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/browser.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/breakpoints.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/util.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+
+  </body>
+
+</html>

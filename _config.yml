@@ -1,0 +1,23 @@
+title: Beach Trip 2024 Orange Beach
+author: Nate Duncan
+email: 
+baseurl: 
+description: >-
+  Beach Trip 2024 Orange Beach
+
+social:
+  twitter: 
+  facebook: 
+  instagram: 
+  github: 
+  linkedin:
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  images:
+    output: true
