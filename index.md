@@ -1,4 +1,5 @@
 ---
-layout: multiverse
-title: 2024 Orange Beach Trip
+layout: main
+title: Image Gallery
+mainURL: /
 ---
